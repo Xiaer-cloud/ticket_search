@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/productDetail/productDetail",
+    "pages/selectcity/selectcity"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#59A5F0",
+    "navigationBarTitleText": "机票查询",
+    "navigationBarTextStyle":"white"
+  },
+  "networkTimeout": {
+    "request": 120000
+  }
+}
