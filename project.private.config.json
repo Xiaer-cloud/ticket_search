@@ -3,5 +3,6 @@
   "projectname": "ticket_search",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "2.32.2"
 }

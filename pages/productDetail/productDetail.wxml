@@ -27,7 +27,6 @@
         <text class="flightName">东方航空MU5130</text>
         <text>|</text>
         <text>波音737（中）</text>
-        <text class="go">去程</text>
       </view>
     </view>
 
@@ -57,13 +56,7 @@
         <text class="flightName">东方航空MU5130</text>
         <text>|</text>
         <text>波音737（中）</text>
-        <text class="go">去程</text>
       </view>
-    </view>
-
-    <view class="remark">
-      <icon type="warn" size="16" color="#ff7f00"/>
-      <view>退改签说明/婴儿不可订</view>
     </view>
 
     <view class="changeFlight" bindtap="changeFlight">更换机票</view>

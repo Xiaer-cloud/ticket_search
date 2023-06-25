@@ -3,25 +3,27 @@
 <!--白色背景区域-->
   <view class="wrap">
 
-    <!--城市选择-->
+    
     <view class="chooseCity pd-70">
+      <!--城市选择-->
   		<view class="citySelect">
   			<view class="startCity" bindtap="selectCity">{{startCity}}</view>
   			<view class="citySelect_img">
           <view bindtap="rotate_img" animation="{{animation}}">
             <image class="changeCity_bg" src="../../images/changeCity_bg.png"></image>
           </view>
-  				<image class="samll_plane" src="../../images/samll_plane.png"></image>
+  				<image class="samll_plane" src="../../images/small_plane.png"></image>
   			</view>
   			<view class="endCity" bindtap="selectCity">{{endCity}}</view>
   		</view>
-
+      
+      <!-- 日期选择 -->
       <view class="chooseDate">
         <block>
-          <picker mode="date">
+          <picker mode="date" value="{{time}}" start="2023-06-01" 
+                  end="2023-08-31" bindchange="bindTimeChange">
             <view class="startDate">
-              <text class="date">9月8日</text>
-              <text class="week">周二出发</text>
+              <text class="date">{{time}}</text>
             </view>
           </picker>
         </block>

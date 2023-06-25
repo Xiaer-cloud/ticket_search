@@ -36,10 +36,12 @@
 }
 
 .chooseCity {
+  margin-top: 40%;
   box-sizing: border-box;
   padding-top: 0.96rem;
   background-color: #fff;
   border-bottom: 2rpx solid #cececf;
+  border-top: 2rpx solid #cececf;
   overflow: hidden;
 }
 

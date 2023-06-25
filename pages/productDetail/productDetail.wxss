@@ -75,8 +75,6 @@
   display: block;
   width: 8.666667rem;
   height: 1.066667rem;
-  background: url('../../images/flight.png') no-repeat center center;
-  background-size: cover;
 }
 
 .flightLine {
@@ -109,8 +107,6 @@
 
 .flightDetail .flightName {
   padding-left: 1.6rem;
-  background: url('../../images/logo.gif') no-repeat 0.266667rem center;
-  background-size: auto 36%;
 }
 
 .flightDetail .go {
@@ -218,10 +214,6 @@
   padding-left: 50rpx;
 }
 
-.address .addressName {
-  background: url('../../images/location.png') no-repeat 16rpx center;
-  background-size: auto 80%;
-}
 
 .tabBar {
   position: fixed;
