@@ -59,7 +59,6 @@
       </view>
     </view>
 
-    <view class="changeFlight" bindtap="changeFlight">更换机票</view>
   </view>
 
 </view>
