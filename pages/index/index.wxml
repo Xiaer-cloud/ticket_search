@@ -30,6 +30,6 @@
       </view>
     </view>
 
-    <button class="sureBtn" bindtap="seatchProduct">确定</button>
+    <button class="sureBtn" bindtap="searchProduct">确定</button>
   </view>
 </view>

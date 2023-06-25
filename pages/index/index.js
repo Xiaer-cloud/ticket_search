@@ -29,7 +29,7 @@ Page({
     })
   },
 
-  seatchProduct: function(){
+  searchProduct: function(){
     wx.navigateTo({
       url:'../productDetail/productDetail'
     })
