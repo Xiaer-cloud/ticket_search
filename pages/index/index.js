@@ -35,13 +35,6 @@ Page({
     })
   },
 
-  selectCity:function(){//选择城市
-    console.log('跳转城市选择页面');
-    wx.navigateTo({
-      url: '../selectcity/selectcity'
-    })
-  },
-
   bindTimeChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({

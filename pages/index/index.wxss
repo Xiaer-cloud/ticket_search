@@ -32,8 +32,9 @@
 }
 
 .chooseCity .citySelect .startCity {
+  margin-top: 20rpx;
   width: 6.187rem;
-  border-bottom: 1rpx solid #F0EFF5;
+  border-bottom: 1rpx solid black;
   color: #4A586A;
 }
 
@@ -70,7 +71,8 @@
 
 .chooseCity .citySelect .endCity {
   width: 6.187rem;
-  border-bottom: 1rpx solid #F0EFF5;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid black;
   text-align: right;
   color: #4A586A;
 }
@@ -94,3 +96,4 @@
   width: 90%;
   margin-top: 1.333333rem;
 }
+

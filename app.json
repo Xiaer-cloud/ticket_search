@@ -1,8 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/productDetail/productDetail",
-    "pages/selectcity/selectcity"
+    "pages/productDetail/productDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,6 +9,7 @@
     "navigationBarTitleText": "机票查询",
     "navigationBarTextStyle":"white"
   },
+  "lazyCodeLoading": "requiredComponents",
   "networkTimeout": {
     "request": 120000
   }
