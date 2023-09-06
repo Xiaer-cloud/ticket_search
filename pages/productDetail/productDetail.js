@@ -88,6 +88,15 @@ Page({
       time: time,
       listData : list
     })
+  },
+
+  toDetail: function(e){
+      var price = e.target.dataset.price 
+      wx.setStorageSync('price', price)
+      console.log(price) 
+      wx.switchTab({
+        url:'../order/order'
+      })
   }
 
 })

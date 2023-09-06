@@ -1,6 +1,7 @@
 
 Page({
      data:{
+       price: '',
        startCity: '',
        endcity: '',
        time: '',
@@ -26,12 +27,14 @@ Page({
     var startCity = wx.getStorageSync('startCity')
     var endCity = wx.getStorageSync('endCity')
     var time = wx.getStorageSync('time')
+    var price = wx.getStorageSync('price')
     console.log(list)
     this.setData({
       startCity: startCity,
       endCity: endCity,
       time: time,
-      listData : list
+      listData : list,
+      price: price
     })
   },
   

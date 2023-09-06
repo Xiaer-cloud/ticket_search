@@ -83,7 +83,7 @@
 <!--底部-->
  <view class="foot">
        <view class="price">
-          <text class="money">￥1269.0</text>
+          <text class="money">￥{{price}}</text>
       </view>
       <view class="btn"  hidden="{{hide}}" >
        <button class="next"  formType="submit" >

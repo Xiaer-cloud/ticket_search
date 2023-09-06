@@ -17,7 +17,7 @@
     <view class="goFlight" wx:for="{{flight}}" data-item="item">
       <view class="flightDate">
         <view>
-          <text>{{startCity}}</text>
+          <text id="startCity">{{startCity}}</text>
           <text class="time">{{item.startTime}}</text>
         </view>
         <view>
@@ -25,21 +25,20 @@
           <text class="flightPic"></text>
         </view>
         <view>
-          <text>{{endCity}}</text>
+          <text id="endCity">{{endCity}}</text>
           <text class="time">{{item.endTime}}</text>
         </view>
       </view>
 
       <view class="flightLine airport">
-        <text>{{item.startAirPlane}}</text>
-        <text class="small">{{item.via}}</text>
-        <text>{{item.endAirPlane}}</text>
+        <text>{{startCity}}T1机场</text>
+        <text>{{endCity}}T2机场</text>
       </view>
 
-      <view class="flightLine flightDetail">
+      <view class="flightLine flightDetail" bindtap="toDetail">
         <text class="flightName">{{item.flight}}</text>
         <text>|</text>
-        <text>{{item.airPlane}}</text>
+        <text data-price="1234">成人价：1234￥</text>
       </view>
     </view>
 
