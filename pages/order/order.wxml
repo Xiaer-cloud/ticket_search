@@ -1,0 +1,113 @@
+<!--index.wxml-->
+<!--头部固定-->
+<view class="{{addhidden?'aa':'hid'}}" >
+<view class="head">
+    <view class="bord containerSmall " >  
+        <text class="line">{{startCity}}-{{endCity}}</text>
+    </view>
+ <view class="state containerSmall">
+    <view class="gostate">出发日期：
+        <text class="txtstate_01">{{time}}</text>
+    </view>
+ </view>
+</view>
+<!--选择乘机人-->
+  <form bindsubmit="formBindsubmit">
+<view class="ordergood">
+  <view class="banner">
+      <view class="layout">
+    <view class="airpeople">
+    <text class="airp">乘机人</text>
+    </view> 
+      <view class="person">
+          <view class="pers"><image src="../../images/person.png" class="per"></image></view>
+
+          <view class="message"> 
+                <text class="permessage">魏忠贤</text>
+                <text class="permessage">410520198210071352</text>
+                <view class="arow"><image src="../../images/arow.png" class="arow"></image></view>
+
+          </view>
+
+      </view>
+    </view>
+  </view>
+
+  <!--乘机人信息-->
+  <view class="banner">
+    <view class="layout">
+        <view class="airpeople">
+        <label class="airp">联系人</label>
+            <input placeholder="请填写姓名" type="text" name="userName" placeholder-style="color:#929FB1; font-size:0.9em;font-weight:bold" /> 
+        </view>
+        <view class="airpeople">
+        <label class="airp">手机号</label>
+            <input placeholder="请填写手机号"  type="number"  name="phone" placeholder-style="color:#929FB1; font-size:0.9em;font-weight:bold" /> 
+        </view>
+    </view>
+  </view>
+
+  <!--保险信息-->
+  <view class="banner insure">
+    <view class="layout">
+       <view class="airsure">
+            <navigator url="../safe/safe">
+            <text class="airinsure">航空综合险</text>
+            <view class="cir1"><image src="../../images/cir1.png" class="cir1"></image></view>
+            </navigator>
+            <view class="rule">百万保额，放心出行</view>
+        </view>
+        <view class="whole"> 
+                <text class="permessage">全程￥38/份</text>
+        </view>
+       <view class="body-view">
+        <switch checked bindchange="switch1Change" />   
+      </view>
+    </view>
+  </view>
+
+  <!--相关规定条款-->
+  <view class="read containerSmall">
+    <view class="choose"  hidden="{{mallhide}}">
+    <image src="{{tip}}" class="check" bindtap="app"></image>
+    </view>
+     <view class="choose"  hidden="{{hide}}">
+    <image src="{{ttp}}" class="checked" bindtap="appjs"  hidden="{{hide}}"></image>
+    </view>
+    <view class="txt">
+    已阅读且同意<navigator url="../guarantee/guarantee">相关规定</navigator>并<navigator url="../insure/insure">认可保险条款和金额</navigator>。
+    </view>
+  </view>
+</view>
+
+<!--底部-->
+ <view class="foot">
+       <view class="price">
+          <text class="money">￥1269.0</text>
+      </view>
+      <view class="btn"  hidden="{{hide}}" >
+       <button class="next"  formType="submit" >
+         <text>下一步</text> 
+         <image src="../../images/row1.png"></image>   
+      </button>
+      </view>
+       <view class="btn" hidden="{{mallhide}}">
+        <button class="next" style="background:#DBDBEA;"  >
+         <text>下一步</text>
+         <image src="../../images/row1.png"></image>
+      </button>
+     </view>
+  </view>
+  </form> 
+  
+<!--机票信息弹出框-->
+<view  class="modal" hidden="{{modalhidden}}" bindtap="hiddenMask">
+</view>  
+</view>
+
+
+
+
+ 
+
+ 

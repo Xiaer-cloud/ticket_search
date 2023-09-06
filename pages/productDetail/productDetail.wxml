@@ -1,19 +1,31 @@
 <view class="container">
 
+  <!-- 头部提示 -->
+  <view class="pannel dateNum">
+    <view class="date">
+      <text>{{time}}</text>
+      <text class="small">出发</text>
+    </view>
+    <view class="num">
+      <text>国内航班</text>
+    </view>
+  </view>
+
+
   <view class="pannel flight">
 
     <view class="goFlight" wx:for="{{flight}}" data-item="item">
       <view class="flightDate">
         <view>
-          <text>{{item.startCity}}</text>
+          <text>{{startCity}}</text>
           <text class="time">{{item.startTime}}</text>
         </view>
         <view>
-          <text class="date">{{item.time}}</text>
+          <text class="date">{{time}}</text>
           <text class="flightPic"></text>
         </view>
         <view>
-          <text>{{item.endCity}}</text>
+          <text>{{endCity}}</text>
           <text class="time">{{item.endTime}}</text>
         </view>
       </view>

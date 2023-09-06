@@ -1,13 +1,30 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/productDetail/productDetail"
+    "pages/productDetail/productDetail",
+    "pages/order/order"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#59A5F0",
     "navigationBarTitleText": "机票查询",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor":"#59A5F0",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "预订",
+      "iconPath":"./images/tab1.png",
+      "selectedIconPath":"./images/tabcolor1.png"
+    },{
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath":"./images/tab2.png",
+      "selectedIconPath":"./images/tabcolor2.png"
+    }]
   },
   "lazyCodeLoading": "requiredComponents",
   "networkTimeout": {

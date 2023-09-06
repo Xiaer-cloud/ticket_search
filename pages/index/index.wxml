@@ -1,12 +1,15 @@
 <!--ticketBooking.wxml-->
 <view class="container">
 <!--白色背景区域-->
+
+
   <view class="wrap">
     <view class="chooseCity pd-70">
       <!--城市选择-->
   		<view class="citySelect">
   			<view class="startCity">
-            <input placeholder="出发地" type="text" value="{{startCity}}"/>
+            <input placeholder="出发地" type="text" value="{{startCity}}"
+                   bindinput="changeStart"/>
         </view>
   			<view class="citySelect_img">
           <view bindtap="rotate_img" animation="{{animation}}">
@@ -15,7 +18,8 @@
   				<image class="samll_plane" src="../../images/small_plane.png"></image>
   			</view>
   			<view class="endCity">
-          <input placeholder="目的地" type="text" value="{{endCity}}"/>
+          <input placeholder="目的地" type="text" value="{{endCity}}"
+                 bindinput="changeEnd"/>
         </view>
   		</view>
       

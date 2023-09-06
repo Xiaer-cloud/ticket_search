@@ -107,3 +107,10 @@
   border-bottom: 1rpx solid #cacaca;
   margin-bottom: 0.533333rem;
 }
+
+.dateNum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8rem 1.173333rem 0.8rem 0.906667rem;
+}
